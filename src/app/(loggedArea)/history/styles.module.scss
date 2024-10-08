@@ -1,0 +1,38 @@
+.wrapper {
+  padding: 32px;
+
+  .matchesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    .matchWrapper {
+      align-items: center;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      padding: 16px;
+
+      .images {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        margin-bottom: 16px;
+
+        img {
+          border-radius: 50%;
+          height: 64px;
+          width: 64px;
+        }
+
+        .emptyImage {
+          background-color: #bbb;
+          border-radius: 50%;
+          height: 64px;
+          width: 64px;
+        }
+      }
+    }
+  }
+}

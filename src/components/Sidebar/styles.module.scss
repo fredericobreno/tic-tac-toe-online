@@ -1,0 +1,29 @@
+.wrapper {
+  background-color: #20183d;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  width: 400px;
+
+  .innerWrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .profile {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+
+    .image {
+      border-radius: 50%;
+    }
+    .name {
+      font-size: 24px;
+    }
+  }
+}
