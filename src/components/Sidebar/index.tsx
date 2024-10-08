@@ -1,11 +1,11 @@
 import { getServerSession } from 'next-auth'
 import styles from './styles.module.scss'
 import Image from 'next/image'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
 import { StartNewMatchButton } from './StartNewGameButton'
 import Link from 'next/link'
 import { Button } from '..'
 import { Logout } from '../Logout'
+import { authOptions } from '@/lib/authOptions'
 
 export const Sidebar = async () => {
   const session = await getServerSession(authOptions)

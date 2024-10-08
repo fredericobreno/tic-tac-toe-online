@@ -5,7 +5,7 @@ import { TicTacToe } from '@/components/TicTacToe'
 import { getServerSession } from 'next-auth'
 import { ShareLink } from './components/ShareLink'
 import { MatchDetails } from './components/MatchDetails'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '@/lib/authOptions'
 
 type MatchPageProps = {
   params: {

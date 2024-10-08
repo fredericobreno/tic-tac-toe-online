@@ -1,13 +1,13 @@
 import { getMatchesByUserId } from '@/actions/match'
 import styles from './styles.module.scss'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
 import { getServerSession } from 'next-auth'
 import Image from 'next/image'
+import { authOptions } from '@/lib/authOptions'
 
 const HistoryPage = async () => {
   const session = await getServerSession(authOptions)
   const matches = await getMatchesByUserId(session?.user.id || '')
-  console.log(matches)
+
   return (
     <div className={styles.wrapper}>
       <h2>History</h2>

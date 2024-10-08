@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation'
 import { PropsWithChildren } from 'react'
 import styles from './styles.module.scss'
 import { SessionProvider } from '@/providers/SessionProvider'
-import { authOptions } from '@/app/api/auth/[...nextauth]/route'
+import { authOptions } from '@/lib/authOptions'
 
 const Layout = async ({ children }: PropsWithChildren) => {
   const session = await getServerSession(authOptions)
